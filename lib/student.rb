@@ -43,8 +43,8 @@ end
 
 def self.students_below_12th_grade
     sql = <<-SQL
-    SELECT * 
-    FROM students 
+    SELECT *
+    FROM students
     WHERE students.grade < 12
     SQL
     DB[:conn].execute(sql).collect do |row|
