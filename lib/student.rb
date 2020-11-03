@@ -60,7 +60,7 @@ def self.students_below_12th_grade
 
   def self.first_X_student_in_grade_10(X)
       sql = <<-SQL
-      SELECT X
+      SELECT *
       FROM students
       WHERE students.grade = 10
       SQL
